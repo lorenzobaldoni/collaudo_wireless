@@ -1,0 +1,16 @@
+<body>
+    <div>
+        <h1>Nuovo collaudo</h1>
+    </div>
+
+    <div>
+        <h2>Dispositivi disponibili</h2>
+    </div>
+
+    <div>
+        <button class="send-mqtt-button" (click)="sendMessage('collaudo/scan_pc', 'ON')">Send MQTT message
+        </button>
+    </div>
+</body>
+
+<router-outlet></router-outlet>

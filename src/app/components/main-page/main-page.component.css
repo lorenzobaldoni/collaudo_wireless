@@ -1,0 +1,46 @@
+.add-test-button {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+.add-test-button svg {
+    width: 100%; /* Ensures the SVG takes the full width of the button */
+    height: 100%; /* Ensures the SVG takes the full height of the button */
+  }
+
+.add-test-button svg path {
+    fill: #fff;
+  }
+
+.tabella-collaudi {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tabella-collaudi tr:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tabella-collaudi, th, td {
+  text-align: left;
+  border: 2px solid;
+  border-color: #bbb;
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+}
+
+.tabella-collaudi tr:last-child {
+  border-bottom: none;
+}
