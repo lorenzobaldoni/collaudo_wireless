@@ -1,0 +1,72 @@
+<body>
+    <div class="main-body">
+        <h1 class="nuovo-collaudo">Nuovo collaudo</h1>
+    </div>
+
+    <form>
+        <div class="form-row">
+            <div class="col-3">
+                <label for="matricola-macchina">Matricola macchina</label>
+                <input type="text" class="form-control" id="matricola-macchina"
+                    placeholder="Inserisci matricola macchina">
+            </div>
+        </div>
+    </form>
+
+    <div class="container-dispositivi-disponibili">
+        <h2 class="pc-disponibili-text">PC di collaudo disponibili</h2>
+
+        <button class="scan-devices-button" (click)="sendMessage('collaudo/scan_pc', 'ON')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                    d="M480-160q-133 0-226.5-93.5T160-480q0-133 93.5-226.5T480-800q85 0 149 34.5T740-671v-129h60v254H546v-60h168q-38-60-97-97t-137-37q-109 0-184.5 75.5T220-480q0 109 75.5 184.5T480-220q83 0 152-47.5T728-393h62q-29 105-115 169t-195 64Z" />
+            </svg>
+        </button>
+    </div>
+
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr class="thead">
+                <th scope="col">#</th>
+                <th scope="col">Nome PC</th>
+                <th scope="col">Indirizzo IP</th>
+                <th scope="col">Stato</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let pc of available_pcs" [attr.id]=pc.id>
+                <td>{{ pc.id }}</td>
+                <td>{{ pc.pc_name }}</td>
+                <td>{{ pc.ip_address }}</td>
+                <td>{{ pc.state }}</td>
+
+                <!-- <td>
+                    <ng-container *ngFor="let online_pc of online_pcs">    
+                        <ng-container *ngIf="online_pc[0] === pc.pc_name">
+                            {{ online_pc[1] }}
+                        </ng-container>
+                    </ng-container>
+                </td>
+                <td>
+                    <ng-container *ngFor="let online_pc of online_pcs">    
+                        <ng-container *ngIf="online_pc[0] === pc.pc_name">
+                            Online
+                        </ng-container>
+                        <ng-container *ngIf="online_pc[0] !== pc.pc_name">
+                            Offline
+                        </ng-container>                        
+                    </ng-container>                    
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <div class="received-message">
+        <p>
+            {{ receivedMessage }}
+        </p>
+    </div>        -->
+
+</body>

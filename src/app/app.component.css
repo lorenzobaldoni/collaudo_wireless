@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+    background: #ffffff;
+    font-size: auto;
+}
+
+.login-button {
+    float: right;
+    background-color: #ffffff;
+    margin-right: 10px;
+    color: #bbb;
+    border: none;
+    border-radius: 4px;    
+}

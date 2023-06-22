@@ -1,0 +1,96 @@
+.storico-collaudi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+}
+
+.tabella-collaudi {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.tabella-collaudi th {
+    border: 2px solid;
+    border-color: #bbb;
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabella-collaudi td {
+    border: 2px solid;
+    border-color: #bbb;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: none;
+    border-left: none;
+}
+
+.tabella-collaudi table {
+    border-radius: 10px;
+}
+
+.tabella-collaudi tr:last-child th,
+.tabella-collaudi tr:last-child td {
+    border-bottom: none; /* Remove bottom border for last row */
+}
+
+.tabella-collaudi tr:not(:first-child):hover {
+    background-color: #f0f0f0; /* Change this to your desired hover color */
+}
+
+hr.solid {
+    border: 1px solid #bbb;
+}
+
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.blue {
+    background-color: #3498db;
+}
+
+button.green {
+    background-color: #2ecc71;
+}
+
+button.orange {
+   background-color: orangered;
+}
+
+.footer-button {
+    display:block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eb6608;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.footer-button svg{
+fill: white;
+}
+
+.main-body{
+    padding: 10px;
+}

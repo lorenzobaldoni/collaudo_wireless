@@ -1,0 +1,56 @@
+.nuovo-collaudo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+}
+
+.main-body{
+    padding: 10px;
+}
+
+.scan-devices-button {
+    position: relative;
+    background-color: #EB6608;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    vertical-align: baseline;
+}
+
+.scan-devices-button svg {
+    fill: #ffffff;
+}
+
+.pc-disponibili-text {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left; 
+}
+
+
+.container-dispositivi-disponibili {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.matricola-input {
+    padding: 10px;
+}

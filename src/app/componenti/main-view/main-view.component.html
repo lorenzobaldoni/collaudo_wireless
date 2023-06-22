@@ -1,0 +1,25 @@
+<body>
+    <div class="main-body">
+        <h1 class="storico-collaudi">Storico collaudi</h1>
+        <table class="tabella-collaudi">
+            <tr>
+                <th>Etichetta</th>
+                <th>Matricola macchina</th>
+                <th>Esito</th>
+                <th>Data</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <nav>
+            <a routerLink="/add-test" routerLinkActive="activebutton" ariaCurrentWhenActive="page" (click)="sendMessage('collaudo/scan_pc', 'ON')" class="footer-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                    <path d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z" />
+                </svg>
+            </a>
+        </nav>
+    </div>
+</body>
+
+<router-outlet></router-outlet>
